@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiHealth</title>
+    <link rel="stylesheet" href="opt.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>OptiHealth</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#diseases">Disease Posts</a></li>
+                <li><a href="#createPost">Create Post</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+       <div id="welcome">Welcome to Optihealth</div>
+
+        <p>Your health optimization solution connecting patients with top medical professionals worldwide.</p>
+    </section>
+
+    <section id="diseases">
+        <h2>Disease Posts</h2>
+        <input type="text" id="postSearch" placeholder="Hi,ask me what do you feel.....">
+        <button onclick="searchPosts()">Search</button>
+        <div id="postResults"></div>
+    </section>
+
+    <section id="createPost">
+        <h2>Create a Disease Post</h2>
+        <form id="createPostForm">
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" required>
+
+            <label for="postDoctor">Doctor:</label>
+            <input type="text" id="postDoctor" required>
+
+            <label for="postSymptoms">Symptoms:</label>
+            <textarea id="postSymptoms" required></textarea>
+
+            <label for="postSigns">Signs:</label>
+            <textarea id="postSigns" required></textarea>
+
+            <label for="postContent">Description:</label>
+            <textarea id="postContent" required></textarea>
+
+            <button type="submit">Submit Post</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Post Doctor</h2>
+        <form id="contactDoctorForm">
+            <label for="contactName">Your Name:</label>
+            <input type="text" id="contactName" required>
+
+            <label for="contactEmail">Your Email:</label>
+            <input type="email" id="contactEmail" required>
+
+            <label for="contactMessage">Message:</label>
+            <textarea id="contactMessage" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+    <!-- Agency Partner Banner -->
+    <div id="agency-banner">
+        <img src="3mtt.jpg" alt="Agency Logo" class="agency-logo">
+        <span class="agency-name">Federal ministry of communications Innovation and Digital Economy</span>
+    </div>
+
+
+
+
+  <footer>
+    <p>&copy; 2024 Optihealth. All rights reserved.</p>
+</footer>
+
+
+    <script src="opt.js"></script>
+</body>
+</html>
